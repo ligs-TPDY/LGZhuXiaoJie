@@ -26,27 +26,40 @@
 <!--http://ligs-tpdy.github.io/ZhuXiaoJie/VersionOne/qfxtaoguwang.ipa-->
 <body background="image_bg.jpg" link="#ff7f50" alink="#8a2be2" vlink="#ff8c00">
     <!-- 注释  -->
-    <div align="center">
-        <h2 align="left">使用说明:</h2>
+    <div>
+        <h1 align="left">一，使用说明:</h1>
         <h3 align="left">猪小戒诞生的原因：蒲公英因为我们托管的APP违反了大天朝的王八屁股，为了避免每次提测APP都要收集手机安装，所以，研究了一下IOS端APP的安装原理。基于此，诞生了猪小戒</h3>
         <h3 align="left">由于目前前端的知识有限，所以，界面比较简单粗暴。当然，如果有大神愿意帮我优化界面和功能，我将不仅感激。</h3>
-
-        <div align="left">
-            
-        </div>
     </div>
-
-    <h1>练习代码</h1>
+        
     <div>
-        <h1>来自李小帅的作品</h1>
-        <h2>来自李小帅的作品</h2>
-        <h3>来自李小帅的作品</h3>
-        <h4>来自李小帅的作品</h4>
-        <h5>来自李小帅的作品</h5>
-        <h6>来自李小帅的作品</h6>
+        <h1 align="left">二，技术实现简介</h1>
+        <p align="left">iOS系统在安装ipa包时，其实是通过读取一个plist文件来确定安装包的具体信息和下载地址。所以我们首先需要设置好这个文件。</p>
+        <p align="left">那么，文件设置好以后，如何告诉iOS系统去读取这个文件呢？</p>
+        <p align="left">接下来，我们就围绕这两点详细讲述如何让iOS系统检测安装我们的测试包。。</p>
+    </div>
+        
+    <div align="center">
+        <h3 align="left">1，设置manifest.plist文件</h3>
+        <img src="manifest.jpg" alt="plist文件设置" height="850">
     </div>
 
     <div>
+        <h3>我这里暂时将测试包托管到了github上，如果你还没有github账号，请尽快注册，好处多多</h3>
+        <h3>根据图片标注，大家应该很直观的看到如何设置plist文件了吧！！</h3>
+    </div>
+
+    <div align="center">
+        <h3 align="left">2，让系统读取manifest.plist文件</h3>
+        <p align="left">首先看一个这个：itms-services://?action=download-manifest&url=https://ligs-tpdy.github.io/ZhuXiaoJie/VersionOne/manifest.plist</p>
+        <p align="left">这里是利用iOS系统的itms-services协议，来读取我们托管到GitHub上的plist文件。然后系统会自动下载plist文件里的安装包</p>
+    </div>
+    
+
+
+    
+
+    <!-- <div>
         <a href="http://jianshu.com" title="你可以看看，不错" target="_blank">简书了，简书了</a>
     </div>
 
@@ -63,16 +76,14 @@
     </div>
     <div>
         <img src="image/dddd.jpg" width="500" height="354" title="dddd" Hspace="200" Vspace="20">
-    </div>
+    </div> -->
 
-    <div>
+    <!-- <div>
         <p>
             战士的日常生活，是并不全部可歌可泣的，然而又无不和可歌可泣相关联，这才是实际上的战士。 —— 鲁迅
-            <!--换行-->
-            <br />
             <a href="http://jianshu.com" title="123" target="_blank">不错，又是简书</a>
         </p>
-    </div>
+    </div> -->
 
 </body>
 
